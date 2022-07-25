@@ -1,4 +1,4 @@
-package zergon.grp.papercpnPro.user.service.impl;
+package zergon.grp.papercpnPro.member.repo;
 
 public class MemberVO {
 	private Long id;

@@ -1,4 +1,4 @@
-package zergon.grp.papercpnPro.user.service.impl;
+package zergon.grp.papercpnPro.member.repo.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,9 +6,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import zergon.grp.papercpnPro.user.service.UserService;
+import org.springframework.stereotype.Repository;
 
-public class UserServiceImpl implements UserService {
+import zergon.grp.papercpnPro.member.repo.MemberRepo;
+import zergon.grp.papercpnPro.member.repo.MemberVO;
+
+@Repository
+public class MemberRepoImpl implements MemberRepo {
 
 	private static Map<Long, MemberVO> store = new HashMap<>();
 	private static long sequence = 0L;
