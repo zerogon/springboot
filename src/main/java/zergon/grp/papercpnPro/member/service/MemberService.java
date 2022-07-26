@@ -9,11 +9,10 @@ import org.springframework.stereotype.Service;
 import zergon.grp.papercpnPro.member.repo.MemberRepo;
 import zergon.grp.papercpnPro.member.repo.MemberVO;
 
-@Service
+
 public class MemberService {
 	private final MemberRepo memberRepo;
 	
-	@Autowired
 	public MemberService(MemberRepo memberRepo) {
 		this.memberRepo = memberRepo;
 	}
