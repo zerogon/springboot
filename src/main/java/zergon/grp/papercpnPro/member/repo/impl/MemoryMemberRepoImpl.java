@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import zergon.grp.papercpnPro.member.repo.MemberRepo;
 import zergon.grp.papercpnPro.member.repo.MemberVO;
 
-public class MemberRepoImpl implements MemberRepo {
+public class MemoryMemberRepoImpl implements MemberRepo {
 
 	private static Map<Long, MemberVO> store = new HashMap<>();
 	private static long sequence = 0L;

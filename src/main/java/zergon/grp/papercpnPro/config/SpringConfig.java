@@ -1,10 +1,10 @@
-package zergon.grp.papercpnPro.member.config;
+package zergon.grp.papercpnPro.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import zergon.grp.papercpnPro.member.repo.MemberRepo;
-import zergon.grp.papercpnPro.member.repo.impl.MemberRepoImpl;
+import zergon.grp.papercpnPro.member.repo.impl.MemoryMemberRepoImpl;
 import zergon.grp.papercpnPro.member.service.MemberService;
 
 @Configuration
@@ -17,7 +17,7 @@ public class SpringConfig {
 	
 	@Bean
 	public MemberRepo memberRepo() {
-		return new MemberRepoImpl();
+		return new MemoryMemberRepoImpl();
 	}
 
 }
