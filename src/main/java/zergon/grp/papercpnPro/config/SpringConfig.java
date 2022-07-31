@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 import zergon.grp.papercpnPro.member.repo.MemberRepo;
 import zergon.grp.papercpnPro.member.repo.impl.JdbcMemberRepoImpl;
+import zergon.grp.papercpnPro.member.repo.impl.JdbcTemplateMemberRepoImpl;
 import zergon.grp.papercpnPro.member.repo.impl.MemoryMemberRepoImpl;
 import zergon.grp.papercpnPro.member.service.MemberService;
 
@@ -27,7 +28,8 @@ public class SpringConfig {
 	@Bean
 	public MemberRepo memberRepo() {
 		//return new MemoryMemberRepoImpl();
-		return new JdbcMemberRepoImpl(dataSource);
+		//return new JdbcMemberRepoImpl(dataSource);
+		return new JdbcTemplateMemberRepoImpl(dataSource);
 	}
 
 
