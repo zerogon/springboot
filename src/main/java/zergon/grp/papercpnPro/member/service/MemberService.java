@@ -3,13 +3,12 @@ package zergon.grp.papercpnPro.member.service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import javax.transaction.Transactional;
 
 import zergon.grp.papercpnPro.member.repo.MemberRepo;
 import zergon.grp.papercpnPro.member.repo.MemberVO;
 
-
+@Transactional
 public class MemberService {
 	private final MemberRepo memberRepo;
 	

@@ -9,6 +9,7 @@ public interface MemberRepo {
 	  *   메모리  -  MemoryMemberRepoImpl
 	  *   JDBC  - JdbcMemberRepoImpl
 	  *   JDBC 템플릿 - JdbcTemplateMemberRepoImpl
+	  *   JPA - JpaMemberRepoImpl
 	  */  
 	 MemberVO save(MemberVO member);
 	 Optional<MemberVO> findById(Long id);
