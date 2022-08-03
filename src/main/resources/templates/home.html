@@ -1,15 +1,16 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<body>
-	<div class="container">
-		<div>
-			<h1>Hello Spring</h1>
-			<p>회원 기능</p>
-			<p>
-				<a href="/member/new">회원 가입</a> <a href="/member/list">회원 목록</a>
-			</p>
-		</div>
-	</div>
-	<!-- /container -->
-</body>
+<!DOCTYPE html>
+<html
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layouts/layout}"
+>
+  <!-- index.html 고유 CSS 추가 -->
+
+  <!-- index.html 고유 스크립트 추가 -->
+
+  <div layout:fragment="content">
+    <div style="border: 1px solid red">
+      index.html 입니다. 즉 컨텐츠 영역
+    </div>
+  </div>
 </html>
