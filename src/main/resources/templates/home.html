@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-  layout:decorate="~{layouts/layout}"
->
-  <!-- index.html 고유 CSS 추가 -->
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout}">
 
-  <!-- index.html 고유 스크립트 추가 -->
+<head>
+<script>
+	$(document).ready(function() {
+		$("p").click(function() {
+			$(this).hide();
+		});
+	});
+</script>
+</head>
 
-  <div layout:fragment="content">
-    <div style="border: 1px solid red">
-      index.html 입니다. 즉 컨텐츠 영역
-    </div>
-  </div>
+
+<div layout:fragment="content">
+	<div style="border: 1px solid red">index.html</div>
+
+</div>
 </html>
