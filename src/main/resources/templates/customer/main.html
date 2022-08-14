@@ -1,9 +1,105 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="@{/layouts/layout}">
 
 <body>
-	<div class="container">
-	mainForm
+	<div layout:fragment="content">
+
+	<!-- 페이지 상단 -->
+		<div class="w3-display-topmiddle w3-padding w3-hide-small">
+			<button class="w3-button w3-round-xxlarge w3-blue">적립내역 보기</button>
+		</div>
+		<!-- 페이지 상단 end -->
+
+		<!-- 페이지 중단 -->
+		<div class="w3-display-middle w3-padding">
+
+
+			<h5>휴대폰 번호 입력:</h5>
+			<div class="w3-padding">
+				<font size="6" style="text-decoration: underline;">0</font> <font
+					size="6" style="text-decoration: underline;">1</font> <font
+					size="6" style="text-decoration: underline;">0</font> <font
+					size="6">-</font> <font size="6"
+					style="text-decoration: underline;">_</font> <font size="6"
+					style="text-decoration: underline;">_</font> <font size="6"
+					style="text-decoration: underline;">_</font> <font size="6"
+					style="text-decoration: underline;">_</font> <font size="6">-</font>
+				<font size="6" style="text-decoration: underline;">_</font> <font
+					size="6" style="text-decoration: underline;">_</font> <font
+					size="6" style="text-decoration: underline;">_</font> <font
+					size="6" style="text-decoration: underline;">_</font>
+			</div>
+
+			<!-- 키패드 -->
+			<div class="w3-content" style="max-width: 600px">
+				<div class="w3-row">
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">1</button>
+					</div>
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">2</button>
+					</div>
+					<div class="w3-third ">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">3</button>
+					</div>
+				</div>
+
+				<div class="w3-row">
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">4</button>
+					</div>
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">5</button>
+					</div>
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">6</button>
+					</div>
+				</div>
+
+				<div class="w3-row">
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">7</button>
+					</div>
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">8</button>
+					</div>
+					<div class="w3-third ">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">9</button>
+					</div>
+				</div>
+
+				<div class="w3-row">
+					<div class="w3-third">&nbsp;</div>
+					<div class="w3-third">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">0</button>
+					</div>
+					<div class="w3-third ">
+						<button class="w3-round w3-padding-large w3-border w3-button"
+							style="width: 100%;">&lt;</button>
+					</div>
+				</div>
+
+			</div>
+			<!-- 키패드 end -->
+			<div class="w3-padding w3-center">
+				<button class="w3-button w3-red w3-round w3-large">적립요청</button>
+			</div>
+		</div>
+		<!-- 페이지 중단 end -->
+
+
 	</div> <!-- /container -->
 </body>
 
