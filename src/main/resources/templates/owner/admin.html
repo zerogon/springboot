@@ -5,8 +5,45 @@
 
 <body>
 	<div layout:fragment="content">
-	admin
-	</div> <!-- /container -->
+     <!-- 페이지 중단 -->
+     <div class="w3-display-middle w3-padding">
+        <div class="w3-contatner w3-border w3-border-black w3-padding w3-center">
+            <font size="5">회원관리</font>
+        </div>
+        <div class="w3-contatner w3-padding w3-center">
+            <input class="w3-input w3-border" style="width:350px;display: inline;" placeholder="010-1234-1234"> 
+            <button class="w3-button w3-blue">검색</button>
+        </div>
+        <div class="w3-margin">
+            <table class="w3-table w3-border">
+                <tr>
+                    <td>No.</td>
+                    <td>고객번호</td>
+                    <td>누적도장수</td>
+                    <td>누적쿠폰수</td>
+                    <td>최근 방문일</td>
+                    <td>최초 가입일</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>010-1234-1234</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2022.01.01</td>
+                    <td>2022.01.01</td>
+                </tr>
+
+            </table>
+            
+        </div>
+        <div class="w3-center">
+            <button class="w3-button w3-red">뒤로가기</button>
+        </div>
+    </div>
+    <!-- 페이지 중단 end -->
+
+
+	</div>
 </body>
 
 </html>
